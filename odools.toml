@@ -1,0 +1,33 @@
+[[config]]
+name = "odoo-beginnings"
+extends = "default"
+
+# 1. Point this to the odoo source code we cloned in the last step
+odoo_path = "./odoo-source"
+
+abstract = false
+
+# 2. Point this to where YOUR custom modules live. 
+# If they are right in the root of odoo-beginnings, use "./".
+# If you have an "addons" folder inside it, use "./addons"
+addons_paths = [
+    "./addons"
+]
+addons_merge = "merge"
+
+# 3. Point this to the Python executable inside your local Windows virtual environment
+python_path = "./.venv/Scripts/python.exe"
+
+stdlib = ""
+additional_stubs = []
+additional_stubs_merge = "merge"
+file_cache = true
+diag_missing_imports = "all"
+ac_filter_model_names = true
+auto_refresh_delay = 1000
+
+[diagnostic_settings]
+# Leave empty for default rules
+
+[[diagnostic_filters]]
+# Leave empty for default rules

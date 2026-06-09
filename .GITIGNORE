@@ -1,2 +1,4 @@
 /odoo_pg_pass
 __pycache__
+.venv
+odoo-source
