@@ -1,9 +1,9 @@
 {
   "python.analysis.extraPaths": [
-    "./odoo-source"
+    "../odoo-source"
   ],
   "python.autoComplete.extraPaths": [
-    "./odoo-source"
+    "../odoo-source"
   ],
   "Odoo.selectedProfile": "odoo-beginnings"
 }

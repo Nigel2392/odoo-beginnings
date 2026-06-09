@@ -2,7 +2,7 @@
 name = "odoo-beginnings"
 extends = "default"
 
-odoo_path = "./odoo-source"
+odoo_path = "../odoo-source"
 
 abstract = false
 
@@ -13,10 +13,10 @@ addons_merge = "merge"
 
 python_path = "./.venv/Scripts/python.exe"
 
-stdlib = ""
+stdlib = "C:/Program Files/Python314/Lib"
 additional_stubs = []
 additional_stubs_merge = "merge"
 file_cache = true
-diag_missing_imports = "all"
+diag_missing_imports = "only_odoo"
 ac_filter_model_names = true
 auto_refresh_delay = 1000
