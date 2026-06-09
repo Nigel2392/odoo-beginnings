@@ -10,6 +10,11 @@ class TicketReply(models.Model):
         string=_("Ticket"),
         required=True,
     )
+    user = fields.Many2one(
+        "res.users",
+        string=_("User"),
+        required=True,
+    )
     date = fields.Date(
         string=_("Date Created"),
         default=fields.Date.today(),
