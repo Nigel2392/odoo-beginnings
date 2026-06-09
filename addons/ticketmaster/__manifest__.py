@@ -1,10 +1,10 @@
 {
-    'name': "Odoo TicketMaster",
-    'version': '1.0',
-    'depends': ['base'],
-    'author': "Nigel2392",
-    'category': 'learning',
-    'description': """
+    "name": "Odoo TicketMaster",
+    "version": "1.0",
+    "depends": ["base"],
+    "author": "Nigel2392",
+    "category": "learning",
+    "description": """
     Learning the basics of the Odoo platform, implemented as a simple ticketing system.
     """,
     # data files always loaded at installation

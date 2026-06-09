@@ -1,0 +1,18 @@
+[tool.black]
+line-length = 119
+
+# Target python version
+target-version = ['py312']
+
+# Files and directories to completely ignore
+exclude = '''
+/(
+    \.git
+  | \.venv
+  | \.vscode
+  | config
+  | __pycache__
+  | build
+  | dist
+)/
+'''
