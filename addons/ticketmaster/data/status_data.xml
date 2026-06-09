@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <data noupdate="1">
+        <record id="status_open" model="ticketmaster.status">
+            <field name="name" translate="True">Open</field>
+            <field name="code">open</field>
+            <field name="color">#00028A</field>
+        </record>
+        <record id="status_in_progress" model="ticketmaster.status">
+            <field name="name" translate="True">In Progress</field>
+            <field name="code">in_progress</field>
+            <field name="color">#8f7316</field>
+        </record>
+        <record id="status_resolved" model="ticketmaster.status">
+            <field name="name" translate="True">Resolved</field>
+            <field name="code">resolved</field>
+            <field name="color">#007209</field>
+        </record>
+        <record id="status_closed" model="ticketmaster.status">
+            <field name="name" translate="True">Closed</field>
+            <field name="code">closed</field>
+            <field name="color">#8b0202</field>
+        </record>
+        <record id="status_pending" model="ticketmaster.status">
+            <field name="name" translate="True">Pending</field>
+            <field name="code">pending</field>
+            <field name="color">#000000</field>
+        </record>
+        <record id="status_on_hold" model="ticketmaster.status">
+            <field name="name" translate="True">On Hold</field>
+            <field name="code">on_hold</field>
+            <field name="color">#000000</field>
+        </record>
+    </data>
+</odoo>
