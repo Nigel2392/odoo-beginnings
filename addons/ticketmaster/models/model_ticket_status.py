@@ -20,3 +20,8 @@ class TicketStatus(models.Model):
         string=_("HTML Color"),
         default="#ffffff",
     )
+    tickets = fields.One2many(
+        "ticketmaster.ticket",
+        "status_id",
+        string=_("Tickets"),
+    )

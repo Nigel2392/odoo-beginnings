@@ -17,7 +17,7 @@ class TicketReply(models.Model):
     )
     date = fields.Date(
         string=_("Date Created"),
-        default=fields.Date.today(),
+        default=fields.Date.today,
     )
     description = fields.Text(
         string=_("Description"),

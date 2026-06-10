@@ -5,6 +5,10 @@ from odoo.exceptions import UserError
 class Ticket(models.Model):
     _name = "ticketmaster.ticket"
     _description = """Support Ticket"""
+    
+    @api.model
+    def _default_status(self):
+        return self.env.ref('ticketmaster.status_open').id
 
     title = fields.Char(
         string=_("Title"),
@@ -16,11 +20,12 @@ class Ticket(models.Model):
     )
     date = fields.Date(
         string=_("Date Created"),
-        default=fields.Date.today(),
+        default=fields.Date.today,
     )
     status_id = fields.Many2one(
         "ticketmaster.status",
         string=_("Status"),
+        default=_default_status,
     )
 
     def action_close_ticket(self):
