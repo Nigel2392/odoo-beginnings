@@ -1,6 +1,7 @@
 services:
   web:
     image: odoo:19.0
+    command: --dev=all # auto reload during dev.
     depends_on:
       - db
     ports:
