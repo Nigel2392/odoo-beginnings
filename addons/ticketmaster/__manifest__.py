@@ -11,6 +11,7 @@
     # data files always loaded at installation
     'data': [
         "data/status_data.xml",
+        "views/menu.xml",
     ],
     # # data files containing optionally loaded demonstration data
     # 'demo': [
