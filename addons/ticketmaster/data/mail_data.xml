@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- https://github.com/Nigel2392/odoo-beginnings/blob/main/docs/ticketmaster/data__mail_data.xml.md -->
 <odoo noupdate="1">
     <record id="mail_alias_support" model="mail.alias">
         <field name="alias_name">support</field>
