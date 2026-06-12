@@ -8,9 +8,10 @@
     "description": """
     Learning the basics of the Odoo platform, implemented as a simple ticketing system.
     """,
-    # data files always loaded at installation
     'data': [
+        'security/ir.model.access.csv',
         "data/status_data.xml",
+        "views/ticket_views.xml",
         "views/menu.xml",
     ],
     # # data files containing optionally loaded demonstration data

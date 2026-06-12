@@ -13,10 +13,12 @@ class Ticket(models.Model):
 
     title = fields.Char(
         string=_("Title"),
+        help=_("The title of the ticket."),
         required=True,
     )
     description = fields.Text(
         string=_("Description"),
+        help=_("The description of the ticket."),
         required=True,
     )
     date = fields.Date(
@@ -26,22 +28,19 @@ class Ticket(models.Model):
     status_id = fields.Many2one(
         "ticketmaster.status",
         string=_("Status"),
+        help=_("The status of the ticket."),
         default=_default_status,
     )
     partner_id = fields.Many2one(
         "res.partner",
         string=_("Partner"),
+        help=_("The contact who created the ticket."),
         default=lambda self: self.env.user.partner_id.id,
     )
     technician_user_id = fields.Many2one(
         "res.users",
         string=_("Technician"),
+        help=_("The technician who will handle the ticket."),
         default=lambda self: self.env.user.id,
     )
-    company_id = fields.Many2one(
-        "res.company",
-        string=_("Company"),
-        default=lambda self: self.env.company.id,
-    )
 
-    

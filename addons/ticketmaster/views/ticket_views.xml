@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- https://github.com/Nigel2392/odoo-beginnings/blob/main/docs/ticketmaster/views__ticket_views.xml.md -->
+<odoo>
+
+    <!-- <record id="view_ticketmaster_ticket_search" model="ir.ui.view"> -->
+        <!-- <field name="name">ticketmaster.ticket.search</field> -->
+        <!-- <field name="model">ticketmaster.ticket</field> -->
+        <!-- <field name="arch" type="xml"> -->
+            <!-- <search> -->
+                <!-- <field name="name"/> -->
+                <!-- <field name="partner_id"/> -->
+                <!-- <group expand="0" string="Group By"> -->
+                    <!-- <filter string="Customer" name="group_by_partner" context="{'group_by': 'partner_id'}"/> -->
+                <!-- </group> -->
+            <!-- </search> -->
+        <!-- </field> -->
+    <!-- </record> -->
+
+    <record id="action_ticketmaster_ticket" model="ir.actions.act_window">
+        <field name="name">Tickets</field>
+        <field name="res_model">ticketmaster.ticket</field>
+        <field name="view_mode">list,form</field>
+        <!-- <field name="search_view_id" ref="view_ticketmaster_ticket_search"/> -->
+        <field name="help" type="html">
+            <p class="o_view_nocontent_smiling_face">
+                No tickets yet
+            </p>
+        </field>
+    </record>
+
+</odoo>

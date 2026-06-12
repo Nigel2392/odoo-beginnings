@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- https://github.com/Nigel2392/odoo-beginnings/blob/main/docs/ticketmaster/views__menu.xml.md -->
 <odoo>
-    <menuitem id="menu_ticketmaster_main" name="TicketMaster"/>
-
+    <menuitem id="menu_ticketmaster_main" 
+              name="TicketMaster" 
+              web_icon="base,static/description/icon.png"
+              action="action_ticketmaster_ticket"/>
 
 </odoo>
