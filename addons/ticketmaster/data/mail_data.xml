@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="mail_alias_support" model="mail.alias">
+        <field name="alias_name">support</field>
+        <field name="alias_model_id" ref="model_ticketmaster_ticket"/>
+        <field name="alias_contact">everyone</field>
+    </record>
+</odoo>

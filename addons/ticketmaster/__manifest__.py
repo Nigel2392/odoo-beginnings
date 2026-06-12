@@ -1,7 +1,7 @@
 {
     "name": "Odoo TicketMaster",
     "version": "1.0",
-    "depends": ["base"],
+    'depends': ['base', 'mail'],
     "author": "Nigel2392",
     "category": "learning",
     'application': True,
