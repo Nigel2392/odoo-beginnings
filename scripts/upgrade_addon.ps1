@@ -6,6 +6,7 @@ param(
 
 # Retrieves the postgress password from the root project directory.
 # Updates the ticketmaster(or other) module.
+# https://www.odoo.com/documentation/19.0/developer/reference/cli.html#cmdoption-odoo-bin-u
 
 $parentDir = Split-Path -Parent $PSScriptRoot
 $passwordPath = Join-Path $parentDir $PasswordFile
